@@ -1,0 +1,40 @@
+<HTML>
+<BODY>
+<%
+    java.util.Date date = new java.util.Date();
+%>
+Hola Clase!  son las ...
+<%
+    out.println( date );
+	int n = 15;
+%>
+<TABLE BORDER=2>
+<%
+    for ( int i = 0; i < n; i++ ) {
+        %>
+        <TR>
+        <TD>Numero </TD>
+        <TD><%= i+1 %></TD>
+        </TR>
+        <%
+    }
+%>
+</TABLE>
+<%
+	boolean  hello = true;
+%>
+
+<%
+    if ( hello ) {
+        %>
+        <P>Verdadero
+        <%
+    } else {
+        %>
+        <P>Falso
+        <%
+    }
+%>
+
+</BODY>
+</HTML>
